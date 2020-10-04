@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.main-option,
+.main-option:before,
+.main-option:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.main-section {
+  padding-top: 2px;
+}
+
+.main-section-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+}
+.main-section-holder:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  height: 100%;
+}
+.main-section-holder-down {
+  text-align: center;
+  margin: 10px auto 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+}
+.main-option {
+  display: inline-block;
+  color: rgba(233, 227, 227, 0.904);
+  font-family: "Righteous", serif;
+  font-size: 3rem;
+  text-shadow: 0.03em 0.03em 0 rgb(90, 192, 104);
+}
+.main-option-below {
+  font-size: 2.8rem;
+}
+.main-bottom {
+  margin-top: 15px;
+}
+.main-description,
+.main-button {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.main-section {
+}
+.main-description {
+  margin-bottom: 25px;
+  font-weight: bolder;
+}
+.main-option:after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: 0.06em;
+  left: 0.06em;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    rgb(63, 151, 82) 45%,
+    rgb(63, 151, 82) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .main-option {
+    font-size: 5rem;
+  }
+  .main-top {
+    border-right: #777777 solid 2px;
+  }
+  .main-description {
+    margin: 15px 60px 60px 60px;
+  }
+  .main-bottom {
+    margin-top: auto;
+  }
+  .main-section-holder-down {
+  }
+}
+/*
+.main-option:hover,
+.main-option:focus {
+  transition: position 1s ease;
+  top: -90px;
+}
+
+.main-section:hover .main-option,
+.main-section:hover .main-description,
+.main-section:hover .main-button {
+  top: -120px;
+  opacity: 1;
+}*/

@@ -1,0 +1,112 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="{%static 'images\logo-main.png'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSpectre | Kids Zone</title>
+    <link rel="stylesheet" href="{%static 'style/news_navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/kidszone_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/text_animation.css'%}" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Secular+One&display=swap" rel="stylesheet"> 
+    
+  </head>
+  
+
+  <body>
+    
+      <header>
+          
+        <div class="container-nav">
+          <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+          <nav class="site-nav">
+            <ul>
+              <li>
+                <a href="/"><i class="fa fa-home site-nav--icon"></i> Home</a>
+              </li>
+              <li>
+                <a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a>
+              </li>
+              <li>
+                <a href="/kids-zone"><i class="fa fa-gamepad site-nav--icon"></i>Kids Zone</a>
+              </li>
+              <li>
+                <a href="/contact-us"
+                  ><i class="fa fa-envelope site-nav--icon"></i>Contact</a
+                >
+              </li>
+              <li>
+                <a href="/accounts/logout" class="nav-bottom"
+                  ><i class="fa fa-sign-out  site-nav--icon last-item"></i
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    
+        <div class="main">
+            <div class="main-section main-top">
+                <div class="main-section-holder">
+                <h1 class="main-option" data-shadow='PLAY&nbsp;QUIZ!' >PLAY&nbsp;QUIZ!</h1>
+                </div>
+                <div class="main-section-holder-down">
+                    <p class="main-description">
+                      Participate in our fun quiz where you have to answer the quistions based on an interesting story that you will witness in the next step. The last 2 questions are bonus questions, they have answers hidden in the news feed that weight 6 marks each, the first 8 are based on the story and weight 2 marks each. 
+                    </p>
+                    <a href="/quiz_video/" class="myButton button-top">Start!</a>
+                </div>
+             
+            </div>
+            <div class="main-section main-bottom">
+                <div class="main-section-holder">
+                <h1 class="main-option main-option-below" data-shadow='VISUAL&nbsp;NOVEL!'>VISUAL&nbsp;NOVEL!</h1>
+                </div>
+                <div class="main-section-holder-down">
+                    <p class="main-description">Come be a part of this interactive story that tells you the importance of nature and conservation.You get to decide what are we doing wrong and what can be done to overcome our flaws as a species.The fate of humanity lies in your hands. Your points here will not be reflected in the leaderboard.
+                      
+                    </p>
+                    
+                    <a href="/visual_novel-menu/" class="myButton button-bottom">Start!</a>
+                </div>
+               
+            </div>
+            
+        </div>
+    
+  
+        <script src="{%static 'script/script.js'%}"></script>
+        <script type="text/javascript">
+          alert("Make sure to enter your child's name in the Edit Profile(home page) tab before proceeding.");
+          </script>
+    <footer>
+        <div class="footer-container">
+            <h2>EcoSpectre</h2>
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="{%static 'images\logo-main.png'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSpectre | Leaderboard</title>
+    <link rel="stylesheet" href="{%static 'style/news_navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/leaderboard_style.css'%}" />
+    <link rel="icon" type="image/ico" href="{%static 'images\logo-main.png'%}" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Secular+One&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    
+      <header>
+          
+        <div class="container-nav">
+          <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+          <nav class="site-nav">
+            <ul>
+              <li>
+                <a href="/"><i class="fa fa-home site-nav--icon"></i> Home</a>
+              </li>
+              <li>
+                <a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a>
+              </li>
+              <li>
+                <a href="/kids-zone/"><i class="fa fa-gamepad site-nav--icon"></i>Kids Zone</a>
+              </li>
+              <li>
+                <a href="/contact-us"
+                  ><i class="fa fa-envelope site-nav--icon"></i>Contact</a
+                >
+              </li>
+              <li>
+                <a href="/accounts/logout" class="nav-bottom"
+                  ><i class="fa fa-sign-out  site-nav--icon last-item"></i
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="main">
+       
+        <h1 class="main-heading">Leaderboard</h1>
+        <table>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Total Score</th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>Bryant</td>
+              <td>460</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Steve Jobs</td>
+                <td>340</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Elon</td>
+                <td>320</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>Michael</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>LeBron</td>
+                <td>270</td>
+              </tr>
+              <tr>
+                <td>6.</td>
+                <td>Jim</td>
+                <td>240</td>
+              </tr>
+              <tr>
+                <td>7.</td>
+                <td>Michael Scott</td>
+                <td>210</td>
+              </tr>
+              <tr>
+                <td>8.</td>
+                <td>Dwight</td>
+                <td>180</td>
+              </tr>
+              <tr>
+                <td>9.</td>
+                <td>Saul</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>10.</td>
+                <td>Bruce</td>
+                <td>120</td>
+              </tr>
+            </table>
+      
+    </div>
+    <script src="{%static 'script/script.js'%}"></script>
+    <footer>
+        <div class="footer-container">
+            <h2>EcoSpectre</h2>
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+  </body>
+</html>

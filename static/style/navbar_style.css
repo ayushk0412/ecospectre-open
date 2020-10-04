@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  position: fixed;
+  background: #459e63;
+  top: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+header {
+  background: #459e63;
+  color: #ebebd3;
+  padding: 0em 0;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo-main {
+  width: 6.4em;
+  margin: 0.3em 0 0.3em 0.6em;
+}
+.site-nav {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background: #459e63;
+  opacity: 0.9;
+  padding: 1.5em 0.8em 1.5em 0.8em;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 1000ms;
+}
+.site-nav--open {
+  clip-path: circle(150% at top right);
+}
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgb(5, 3, 3);
+}
+.site-nav li {
+  border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: #ebebd3;
+  display: block;
+  padding: 1.6em 2em 1.6em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #43a062;
+  color: #464655;
+  font-weight: 600;
+}
+
+span {
+  font-weight: 300;
+}
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: 1.9em;
+  right: 0.5em;
+  cursor: pointer;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #ebebd3;
+  height: 3.5px;
+  width: 1.85em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+.hamburger::before {
+  transform: translateY(-6px);
+}
+.hamburger::after {
+  transform: translateY(3px);
+}
+.open .hamburger {
+  transform: rotate(45deg);
+}
+.open .hamburger::before {
+  opacity: 0;
+}
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (min-width: 700px) {
+  .menu-toggle {
+    display: none;
+  }
+  .logo-main {
+    width: 8.4rem;
+    margin-left: 1.2em;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .site-nav {
+    position: relative;
+
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    display: flex;
+    clip-path: initial;
+  }
+  .site-nav li {
+    display: inline-block;
+    margin: 0;
+    border: none;
+  }
+  .site-nav ul {
+    background-color: transparent;
+  }
+  .site-nav a {
+    padding: 0;
+    margin-left: 2em;
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+  .site-nav--icon {
+    display: none;
+  }
+}

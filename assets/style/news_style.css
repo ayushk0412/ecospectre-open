@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23accdb4' fill-opacity='0.2' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.footer-heading {
+  margin-top: 10px;
+  font-family: "Quicksand";
+  color: honeydew;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+  color: #143774;
+  font-family: Lora;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+a {
+  color: #1792d2;
+  font-weight: bolder;
+}
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #1792d2;
+  font-family: Ubuntu Bold;
+  font-weight: 700;
+}
+
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-info {
+  margin: 2em 0;
+}
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+strong {
+  font-weight: 700;
+}
+/*------ARTICLE--------*/
+
+.article-top {
+  border-bottom: solid 1px #707070;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+.article-below {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.article-below-main {
+  order: 2;
+}
+.article-below-secondary {
+  order: 1;
+}
+/*------WIDGETS--------*/
+.widget-below-post-title,
+.widget-title {
+  font-size: 1em;
+}
+.widget-title {
+  font-weight: 700;
+  font-family: "Ubuntu";
+}
+
+/*--------------*/
+
+.container {
+  padding: 25px 20px 10px 20px;
+  border-radius: 13px;
+  width: 90%;
+  max-width: 900px;
+  margin: 120px auto 40px auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  background: rgb(255, 255, 255);
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-widget {
+  border: 20px #efefef solid;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+.widget-below-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  border-bottom: 1.2px #efefef solid;
+}
+.widget-below-post:last-child {
+  margin: 0;
+  border: 0;
+}
+.widget-image {
+  order: -2;
+}
+.widget-below-post-title {
+  order: -1;
+}
+.widget-edit-profile {
+  font-family: "Ubuntu";
+  background-color: #1792d2;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 3px;
+}
+.widget-edit-profile:hover {
+  background-color: #143774;
+}
+.widget-edit-profile:active {
+  position: relative;
+  top: 1px;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    padding: 25px 25px 10px 25px;
+    flex-direction: row;
+    margin: 150px auto 40px auto;
+  }
+  main {
+    max-width: 70%;
+  }
+  aside {
+    max-width: 25%;
+    min-width: 230px;
+    margin-left: 1.5em;
+  }
+  .article-below {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article-below-secondary {
+    width: 30%;
+  }
+  .article-below-main {
+    width: 66%;
+  }
+  .article-img {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  .article-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-img {
+    order: -2;
+  }
+  .article-info {
+    order: -1;
+  }
+}

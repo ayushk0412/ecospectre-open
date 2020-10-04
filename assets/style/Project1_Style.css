@@ -1,0 +1,177 @@
+body {
+  margin: 20px 0 0 0;
+  font-family: "Ubuntu";
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+  color: #143774;
+  font-family: Lora;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+a {
+  color: #1792d2;
+  font-weight: bolder;
+}
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #1792d2;
+  font-family: Ubuntu Bold;
+  font-weight: 700;
+}
+
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-info {
+  margin: 2em 0;
+}
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+strong {
+  font-weight: 700;
+}
+/*------ARTICLE--------*/
+
+.article-top {
+  border-bottom: solid 1px #707070;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+.article-below {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.article-below-main {
+  order: 2;
+}
+.article-below-secondary {
+  order: 1;
+}
+/*------WIDGETS--------*/
+.widget-below-post-title,
+.widget-title {
+  font-size: 1em;
+}
+.widget-title {
+  font-weight: 700;
+  font-family: "Ubuntu";
+}
+
+/*--------------*/
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 675px) {
+  .article-below {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article-below-secondary {
+    width: 25%;
+  }
+  .article-below-main {
+    width: 70%;
+  }
+  .article-img {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  .article-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-img {
+    order: -2;
+  }
+  .article-info {
+    order: -1;
+  }
+  .site-title {
+    margin: 0;
+  }
+  .container-flex {
+    flex-direction: row;
+    justify-self: center;
+  }
+  main {
+    max-width: 70%;
+  }
+  aside {
+    max-width: 25%;
+    min-width: 230px;
+    margin-left: 1.5em;
+  }
+}
+.sidebar-widget {
+  border: 20px #efefef solid;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+.widget-below-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  border-bottom: 1.2px #efefef solid;
+}
+.widget-below-post:last-child {
+  margin: 0;
+  border: 0;
+}
+.widget-image {
+  order: -2;
+}
+.widget-below-post-title {
+  order: -1;
+}
+footer {
+  width: 100%;
+
+  text-align: center;
+  background-color: #143774;
+  padding: 1em;
+  color: white;
+}

@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: #4ac29a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #bdfff3,
+    #4ac29a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #bdfff3, #4ac29a);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.main {
+  padding: 20px;
+  width: 93%;
+  margin: 130px auto 8px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.main-heading {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: rgb(122, 194, 113);
+  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+table {
+  margin-top: 0px;
+}
+th {
+  padding-bottom: 40px;
+}
+table,
+th,
+td {
+  text-align: center;
+  font-size: 1rem;
+
+  font-family: "Quicksand";
+  font-weight: 500;
+  padding: 6px 4px 10px 0px;
+}
+th {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Quicksand";
+  color: rgb(122, 194, 113);
+}
+footer {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 700px) {
+  table {
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+  table,
+  th,
+  td {
+    text-align: center;
+    font-size: 1.2rem;
+
+    font-family: "Quicksand";
+    font-weight: 500;
+    padding: 10px 25px 10px 25px;
+  }
+  th {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Quicksand";
+  }
+  .main-heading {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Kanit", sans-serif;
+    font-size: 3.4rem;
+    line-height: 1;
+  }
+  .main {
+    width: 45%;
+    margin-top: 140px;
+    margin-bottom: 15px;
+  }
+}

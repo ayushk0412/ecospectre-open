@@ -1,0 +1,89 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="{%static 'images\logo-main.png'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSpectre | Quiz Video</title>
+    <link rel="stylesheet" href="{%static 'style/news_navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/quiz_video_style.css'%}" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Secular+One&display=swap" rel="stylesheet"> 
+    <style>
+      .img-bg{
+        background-image: url("{%static 'images/video_bg.jpg'%}");
+      }
+    </style>
+  </head>
+  <body>
+    
+      <header>
+          
+        <div class="container-nav">
+          <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+          <nav class="site-nav">
+            <ul>
+              <li>
+                <a href="/"><i class="fa fa-home site-nav--icon"></i> Home</a>
+              </li>
+              <li>
+                <a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a>
+              </li>
+              <li>
+                <a href="/kids-zone"><i class="fa fa-gamepad site-nav--icon"></i>Kids Zone</a>
+              </li>
+              <li>
+                <a href="/contact-us"
+                  ><i class="fa fa-envelope site-nav--icon"></i>Contact</a
+                >
+              </li>
+              <li>
+                <a href="/accounts/logout" class="nav-bottom"
+                  ><i class="fa fa-sign-out  site-nav--icon last-item"></i
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="img-bg">
+
+      <div class="video-holder">
+        
+        <iframe src="https://www.youtube.com/embed/cygAkWUWq48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <form action="/quiz/" method="GET">
+        <button  class="main-button">PROCEED TO THE QUIZ</button>
+        </form>
+      </div>
+    </div>
+    <script src="{%static 'script/script.js'%}"></script>
+    <footer>
+        <div class="footer-container">
+            <h2>EcoSpectre</h2>
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+  </body>
+</html>

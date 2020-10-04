@@ -1,0 +1,151 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="{%static 'images/logo-main.png'%}"
+    />
+    <link rel="stylesheet" href="{%static 'style/news_navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/contactus_style.css'%}" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap.css"
+      rel="stylesheet"
+      <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>EcoSpectre | Contact Us</title>
+    <style>
+      body {
+        font-family: "Quicksand";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-nav">
+        <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="/"><i class="fa fa-home site-nav--icon"></i> Home</a>
+            </li>
+            <li>
+              <a href="/about"
+                ><i class="fa fa-info site-nav--icon"></i>About</a
+              >
+            </li>
+            <li>
+              <a href="/kids-zone"
+                ><i class="fa fa-gamepad site-nav--icon"></i>Kids Zone</a
+              >
+            </li>
+            <li>
+              <a href="/contact-us"
+                ><i class="fa fa-envelope site-nav--icon"></i>Contact</a
+              >
+            </li>
+            <li>
+              <a href="/accounts/logout" class="nav-bottom"
+                ><i class="fa fa-sign-out site-nav--icon last-item"></i
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <p class="map-title map">Locate us on google maps</p>
+      <div class="main-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1374.8240126666763!2d77.61113302398435!3d12.934082659078364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc12c41d8c342ce04!2sForum%20Mall!5e0!3m2!1sen!2sin!4v1599074943976!5m2!1sen!2sin"
+        >
+        </iframe>
+      </div>
+      <p class="map-title feedback">Customer feedback form</p>
+      <div class="container">
+        <form action="">
+          <p class="container-title">First Name</p>
+          <input
+            class="container-input"
+            type="text"
+            placeholder="Your first name"
+            name=""
+            id=""
+          />
+          <p class="container-title">Last Name</p>
+          <input
+            class="container-input"
+            type="text"
+            placeholder="Your last name"
+            name=""
+            id=""
+          />
+          <p class="container-title">Phone Number</p>
+          <input
+            class="container-input"
+            placeholder="Your phone number"
+            type="text"
+            name=""
+            id=""
+          />
+          <p class="container-title">Email</p>
+          <input
+            class="container-input"
+            type="text"
+            placeholder="Your email address"
+            name=""
+            id=""
+          />
+          <p class="container-title">Comments</p>
+          <textarea class="container-input-textarea" name="" id=""></textarea>
+          <center>
+            <input class="container-submit" type="submit" value="Submit" />
+          </center>
+        </form>
+      </div>
+      <script src="{%static 'script/script.js'%}"></script>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <h2>EcoSpectre</h2>
+        <p>Copyright 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSpectre | About</title>
+    <link rel="stylesheet" href="{%static 'style/news_navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/about_style.css'%}" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Secular+One&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    
+      <header>
+          
+        <div class="container-nav">
+          <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+          <nav class="site-nav">
+            <ul>
+              <li>
+                <a href="/"><i class="fa fa-home site-nav--icon"></i> Home</a>
+              </li>
+              <li>
+                <a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a>
+              </li>
+              <li>
+                <a href="/kids-zone"><i class="fa fa-gamepad site-nav--icon"></i>Kids Zone</a>
+              </li>
+              <li>
+                <a href="/contact-us"
+                  ><i class="fa fa-envelope site-nav--icon"></i>Contact</a
+                >
+              </li>
+              <li>
+                <a href="/accounts/logout" class="nav-bottom"
+                  ><i class="fa fa-sign-out  site-nav--icon last-item"></i
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="main">
+       
+        <h1 class="main-heading">Welcome to EcoSpectre!</h1>
+        <p class="main-para"><strong>Did you know that,</strong><br>
+            The amount of water on Earth is constant, and continually recycled over time: some of the water you drink will have passed through a dinosaur! <br> 
+            or, 
+            Humans and elephants are the only animals with chins!<br>
+            Our environment is changing rapidly, and its high time that our younger generation starts learning about ways to combat this. We have one planet, one home, let us learn to protect it.
+            <br>
+            Join Eco Spectre and learn about our mother nature on this fun and educative journey. Stay up to date with the latest environmental news. Also, participate in quizzes and grab your spot on our leader board.
+            </p>
+        
+      
+    </div>
+    <script src="{%static 'script/script.js'%}"></script>
+    <footer>
+        <div class="footer-container">
+            <h2>EcoSpectre</h2>
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,286 @@
+{% extends 'base.html' %} {%block content %} {%load static%}
+{% if user.is_authenticated %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="{%static 'images\logo-main.png'%}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="{%static 'style/news_navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/news_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>EcoSpectre | NewsFeed </title>
+  </head>
+  <body>
+    <header>
+      <div class="container-nav">
+        <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="/"><i class="fa fa-home site-nav--icon"></i> Home</a>
+            </li>
+            <li>
+              <a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a>
+            </li>
+            <li>
+              <a href="/kids-zone/"><i class="fa fa-gamepad site-nav--icon"></i>Kids Zone</a>
+            </li>
+            <li>
+              <a href="/contact-us"
+                ><i class="fa fa-envelope site-nav--icon"></i>Contact</a
+              >
+            </li>
+            <li>
+              <a href="/accounts/logout" class="nav-bottom"
+                ><i class="fa fa-sign-out  site-nav--icon last-item"></i
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+      <script src="{%static 'script/script.js'%}"></script>
+    </header>
+    <div class="container container-flex">
+      <main role="main">
+        <article class="article-top">
+          <h2 class="article-title">Global Survey Using NASA Data Shows Dramatic Growth of Glacial Lakes</h2>
+          <img src="{%static 'images/feed/feed4.jpg'%}" alt="" class="article-img" />
+          <p class="article-info">July 23, 2019 | 3 comments</p>
+          <p class="article-body">
+            In the largest-ever study of glacial lakes, researchers using 30 years of NASA satellite data have found that the volume of these lakes worldwide has increased by about 50% since 1990 as glaciers melt and retreat due to climate change.
+            The findings, published in the journal Nature Climate Change, will aid researchers assessing the potential hazards to communities downstream of these often unstable lakes and help improve the accuracy of sea level rise estimates by advancing our understanding of how glacial meltwater is transported to the oceans.
+            Glaciers are retreating on a near-global scale and this study provides scientists with a clearer picture of how much of this water has been stored in lakes.
+            “We have known that not all meltwater is making it into the oceans immediately,” said lead author Dan Shugar of the University of Calgary in Canada. “But until now there were no data to estimate how much was being stored in lakes or groundwater.” The study estimates current glacial lake volumes total about 37.4 cubic miles (156 cubic kilometers) of water, the equivalent of about one-third the volume of Lake Erie.
+            
+              
+          </p>
+          <a href="https://www.nasa.gov/press-release/global-survey-using-nasa-data-shows-dramatic-growth-of-glacial-lakes" target="_blank" class="article-read-more">continue reading</a>
+        </article>
+
+
+        <article class="article-below">
+          <div class="article-below-main">
+            <h2 class="article-title">
+              Emissions Could Add 15 Inches to Sea Level by 2100, NASA-led Study
+              Finds
+            </h2>
+            <p class="article-body">
+              An international effort that brought together more than 60 ice,
+              ocean, and atmosphere scientists from three dozen international
+              institutions has generated new estimates of how much of an impact
+              Earth’s melting ice sheets could have on global sea levels by
+              2100. If greenhouse gas emissions continue apace, Greenland and
+              Antarctica’s ice sheets could together contribute more than 15
+              inches (38 centimeters) of global sea level rise – and that’s
+              beyond the amount that has already been set in motion by Earth’s
+              warming climate.
+            </p>
+            <a href="https://climate.nasa.gov/news/3021/emissions-could-add-15-inches-to-sea-level-by-2100-nasa-led-study-finds/" target="_blank" class="article-read-more">continue reading</a>
+          </div>
+          <div class="article-below-secondary">
+            <img src="{%static 'images/feed/feed2.jpg'%}" alt="" class="article-img" />
+            <p class="article-info">July 19, 2019 | 3 comments</p>
+          </div>
+        </article>
+
+
+        <article class="article-below">
+          <div class="article-below-main">
+            <h2 class="article-title">How 5000 Citizens Came Together to Clean up Nearly 20 Tonnes of Mumbai’s Trash</h2>
+            <p class="article-body">
+              “There are a lot of groups dedicated to cleaning beaches, but they all work in silos. Project Mumbai brought all of them together. We passionately believe in creating social transformation through scale. A bigger noise compels the government to take notice. Moreover, it also brings ordinary citizens out into these public spaces, making them see the scale of the problem, equipping them with the necessary skills to clean them and eventually getting them to spread the message to their families, friends or office colleagues,” says Shishir Joshi, the Founder of Project Mumbai.
+            </p>
+            <a href="https://www.thebetterindia.com/185009/mumbai-thousands-clean-trash-beach-inspiring-environment-day-india/" target="_blank" class="article-read-more">continue reading</a>
+          </div>
+          <div class="article-below-secondary">
+            <img src="{%static 'images/feed/feed8.jpg'%}" alt="" class="article-img" />
+            <p class="article-info">July 12, 2019 | 3 comments</p>
+          </div>
+        </article>
+
+
+        <article class="article-below">
+          <div class="article-below-main">
+            <h2 class="article-title">NASA's ECOSTRESS Monitors California's Record-Breaking Heat Wave</h2>
+            <p class="article-body">
+              From cities to deserts, the intense heat gripping California is being closely monitored by an Earth-observing mission aboard the International Space Station.
+              As record temperatures and large wildfires scorch California, NASA's Ecosystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) has been tracking the heat wave from low Earth orbit. While ECOSTRESS's primary mission is to measure the temperature of plants heating up as they run out of water, it can also measure and track heat-related phenomena like heat waves, wildfires, and volcanoes.
+            </p>
+            <a href="https://www.nasa.gov/feature/jpl/nasas-ecostress-monitors-californias-record-breaking-heat-wave" target="_blank" class="article-read-more">continue reading</a>
+          </div>
+          <div class="article-below-secondary">
+            <img src="{%static 'images/feed/feed5.jpg'%}" alt="" class="article-img" />
+            <p class="article-info">July 3, 2019 | 3 comments</p>
+          </div>
+        </article>
+
+
+        <article class="article-below">
+          <div class="article-below-main">
+            <h2 class="article-title">Warming Temperatures Are Driving Arctic Greening</h2>
+            <p class="article-body">
+              As Arctic summers warm, Earth’s northern landscapes are changing. Using satellite images to track global tundra ecosystems over decades, a new study found the region has become greener as warmer air and soil temperatures lead to increased plant growth.
+“The Arctic tundra is one of the coldest biomes on Earth, and it’s also one of the most rapidly warming,” said Logan Berner, a global change ecologist with Northern Arizona University in Flagstaff, who led the recent research. “This Arctic greening we see is really a bellwether of global climatic change – it’s a biome-scale response to rising air temperatures.”
+
+            </p>
+            <a href="https://climate.nasa.gov/news/3025/warming-temperatures-are-driving-arctic-greening/" target="_blank" class="article-read-more">continue reading</a>
+          </div>
+          <div class="article-below-secondary">
+            <img src="{%static 'images/feed/feed1.jpg'%}" alt="" class="article-img" />
+            <p class="article-info">July 3, 2019 | 3 comments</p>
+          </div>
+        </article>
+
+
+      </main>
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h2 class="widget-title">ABOUT ME</h2>
+          {%for i in profile%}
+          <img src="{{i.myimg.url}}" alt="" class="widget-image" />
+          {%endfor%}
+          <p class="widget-body">
+            I find life better, and I'm happier, when things are nice and
+            simple.
+          </p>
+          <center>
+            <form action="/profile/edit/{{ user.profile.id }} ">
+            <button class="widget-edit-profile">Edit Profile</button>
+          </form>
+          </center>
+        </div>
+        <div class="sidebar-widget">
+          <h2 class="widget-title">RECENT POSTS</h2>
+          <div class="widget-below-post">
+            <h3 class="widget-below-post-title">Ice Melt Linked to Accelerated Regional Freshwater Depletion</h3>
+            <img src="{%static 'images/feed/feed3.jpg'%}" alt="" class="widget-image" />
+          </div>
+          <div class="widget-below-post">
+            <h3 class="widget-below-post-title">NASA Data Aids Ozone Hole’s Journey to Recovery</h3>
+            <img src="{%static 'images/feed/feed9.jpg'%}" alt="" class="widget-image" />
+          </div>
+          <div class="widget-below-post">
+            <h3 class="widget-below-post-title">Nasa's Graph on temperature</h3>
+            <img src="{%static 'images/feed/feed7.png'%}" alt="" class="widget-image" />
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <h2 class="footer-heading">EcoSpectre</h2>
+        <p>Copyright 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>
+{% else %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/ico" href="{%static 'images\logo-main.png'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSpectre | Welcome</title>
+    <link rel="stylesheet" href="{%static 'style/navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/index_style.css'%}" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Secular+One&display=swap" rel="stylesheet"> 
+    <style>
+      .img-bg{
+        background-image: url("{%static 'images/bg.jpg'%}");
+      }
+    </style>
+  </head>
+  <body>
+    
+      <header>
+          
+        <div class="container">
+          <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+          <nav class="site-nav">
+            <ul>
+              <li>
+                <a href=""><i class="fa fa-home site-nav--icon"></i> Home</a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-info site-nav--icon"></i>About</a>
+              </li>
+              <li>
+                <a href="/accounts/login"><i class="fa fa-sign-in site-nav--icon"></i>Login</a>
+              </li>
+              <li>
+                <a href="/accounts/register"><i class="fa fa-user-plus site-nav--icon"></i>Sign Up</a>
+              </li>
+              <li>
+                <a href="/contact-us" class="nav-bottom"
+                  ><i class="fa fa-envelope site-nav--icon last-item"></i
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="img-bg">
+        <div class="main-content-holder">
+        <h1 class="main-heading">Welcome to the EcoSpectre</h1>
+        <p class="main-para">Get ready to dissolve yourself and your kids into the knowledge of environment, but not in the traditional, old fashioned way. To know more click the button below. </p>
+        <a href="/accounts/register" class="main-button">Get Started</a>
+        </div>
+    </div>
+    <script src="{%static 'script/script.js"></script>
+    <footer>
+        <div class="footer-container">
+            <h2>EcoSpectre</h2>
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+  </body>
+</html>
+{%endif%}
+{%endblock%}

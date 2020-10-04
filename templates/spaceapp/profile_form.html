@@ -1,0 +1,183 @@
+{% extends 'base.html' %} {% block content %} {%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSpectre | Edit Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{%static 'style/news_navbar_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/footer_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/kidszone_style.css'%}" />
+    <link rel="stylesheet" href="{%static 'style/text_animation.css'%}" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Secular+One&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/ico" href="{%static 'images\logo-main.png'%}" />
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+
+    <style>
+      .avatar{
+        width: 70%;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <header>
+          
+      <div class="container-nav">
+        <img class="logo-main" src="{%static 'images/logo-main.png'%}" alt="" />
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="/"><i class="fa fa-home site-nav--icon"></i> Home</a>
+            </li>
+            <li>
+              <a href="/about/"><i class="fa fa-info site-nav--icon"></i>About</a>
+            </li>
+            <li>
+              <a href="/kids-zone/"><i class="fa fa-gamepad site-nav--icon"></i>Kids Zone</a>
+            </li>
+            <li>
+              <a href="/contact-us"
+                ><i class="fa fa-envelope site-nav--icon"></i>Contact</a
+              >
+            </li>
+            <li>
+              <a href="/accounts/logout" class="nav-bottom"
+                ><i class="fa fa-sign-out  site-nav--icon last-item"></i
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </header>
+    <br>
+    <br>
+
+    <br>
+
+    <br>
+<br>
+
+    <div class="container">
+      <h1>Edit Profile</h1>
+      <hr />
+      <div class="row">
+        <!-- left column -->
+    
+
+        <!-- edit form column -->
+        <div class="col-md-9 personal-info">
+          <div class="alert alert-info alert-dismissable">
+            <a class="panel-close close" data-dismiss="alert">×</a>
+            <i class="fa fa-coffee"></i>
+            This is an <strong>.alert</strong>. Use this to show important
+            messages to the user.
+          </div>
+          <h3>Personal info</h3>
+
+          <form
+            class="form-horizontal"
+            role="form"
+            enctype="multipart/form-data"
+            method="POST"
+          >
+            {%csrf_token%}
+            <div class="col-md-3">
+              <div class="text-center">
+                <img
+                  src="{{ user.profile.myimg.url }}"
+                  class="avatar img-circle"
+                  alt="avatar"
+                />
+                <h6>Upload a different photo...</h6>
+    
+                {{form.myimg}}
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">First name:</label>
+              <div class="col-lg-8">{{form.fname}}</div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Last name:</label>
+              <div class="col-lg-8">{{form.lname}}</div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Phone Number:</label>
+              <div class="col-lg-8">{{form.ph_no}}</div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">About yourself:</label>
+              <div class="col-lg-8">{{form.desc}}</div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-lg-3 control-label"
+                >Date of birth (yyyy/mm/dd):</label
+              >
+              <div class="col-lg-8">{{form.DOB}}</div>
+            </div>
+            <label class="col-lg-3 control-label"
+                >Your child's name(or someone your are a guardian to):</label
+              >
+              <div class="col-lg-8">{{form.child_name}}</div>
+              <br>
+              <br>
+             
+  
+              <input
+              type="submit"
+              class="btn btn-primary"
+              value="Save Changes"
+            />
+            <span></span>
+           
+            <input type="reset" class="btn btn-default" value="Cancel" />
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label"></label>
+              <br>
+              <center>
+              <div class="col-lg-8">
+               
+              
+
+              </div>
+              </center>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <script src="{%static 'script/script.js'%}"></script>
+    <footer>
+        <div class="footer-container">
+            <h2>EcoSpectre</h2>
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+  </body>
+</html>
+{%endblock%}
