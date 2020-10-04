@@ -17,6 +17,5 @@ urlpatterns = [
     path('visual_novel-menu/', views.visual_novel_menu, name="visual_novel_menu"),
     path('leaderboard/', views.leaderboard, name="leaderboard"),
     path('contact-us/', views.contactus, name="contactus"),
-    path('about/', views.about, name="about"),
     path('profile/edit/<int:pk>', views.ProfileUpdateView.as_view(success_url="/")),
 ]
